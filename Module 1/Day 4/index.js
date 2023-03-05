@@ -60,17 +60,19 @@ console.log(BMI(75, 1.78));
 
 // // Write a function to remove all odd numbers in an array and return a new array that contains even numbers only
 
-function arr(even) {}
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+function arrayNum(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (i % 2 == 0) {
+    } else console.log([i]);
+  }
+}
+arrayNum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 // Write a function to split a string and convert it into an array of words
 // Example : “Hello World” → [“Hello”, “World”]
 
-function split(hi) {
-  hi2 = hi.slice(0, 5);
-  hi3 = hi.slice(6, 11);
-  hi4 = [hi2, hi3];
-  console.log(hi4);
-  return split;
+function strSplit(text) {
+  strSplit2 = text.split(" ");
+  return strSplit2;
 }
-split("Hello World");
+console.log(strSplit("Hello World"));
