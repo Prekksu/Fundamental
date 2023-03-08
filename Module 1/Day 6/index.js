@@ -1,8 +1,8 @@
 class Student {
-  constructor(nama, email, birthdate, score) {
+  constructor(nama, email, umur, score) {
     this.nama = nama;
     this.email = email;
-    this.birthdate = umur;
+    this.umur = umur;
     this.score = score;
   }
 }
@@ -40,4 +40,4 @@ hasil = {
     studentScoreAvg: studentScore.reduce((a, b) => a + b) / studentScore.length,
   },
 };
-console.log(hasil);
+console.log(hasil)
