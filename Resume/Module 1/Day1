@@ -45,7 +45,7 @@
  //	    prop2: 123
  //	   }
  
- //        obj1.prop1 = '1234' >>> obj1 willbe '1234'
+ //        obj1.prop1 = '1234' >>> obj1 will be '1234'
  //	   obj1.prop3 = '4444' >>> add more object
  
  //        console.log(obj1) 
@@ -103,7 +103,7 @@ function func() {
 
 }
 
-or
+// or
 
 func = () => {
 
