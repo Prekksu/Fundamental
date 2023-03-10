@@ -39,9 +39,9 @@ class Salary extends Employee {
 
 employee1 = new Salary("adi", "kuli", 30, 6, "parttime");
 employee2 = new Salary("bagas", "kuli", 35, 5, "fulltime");
-employee3 = new Salary("coro", "kuli", 35, 6, "parttime");
+employee3 = new Salary("coro", "kuli", 35, 7, "parttime");
 
-console.log(employee1.gaji());
+console.log(employee3.gaji());
 
 // Exercise - Shooting Game
 
@@ -64,9 +64,7 @@ class Player {
 
 class ShootingGame {
   constructor(player1, player2, randomItem, start) {
-    this.player1= player1
-    this.player2=player2
-    this.randomItem = randomItem
-    ;
+    this.player1 = player1;
+    this.player2 = player2;
   }
 }

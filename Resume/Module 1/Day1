@@ -1,0 +1,179 @@
+ 				DAYYYYYYYYYYYYYY 1
+ 
+ 
+ frontend using javascript for logic
+ 
+ javascript not only on browser (using javascript engine)
+ javascript > using engine V8
+ 
+ javascript: 1.single-treaded (run onetime)
+ 	     2.non-blocking & asynchronous (can make javascript run asynchronous
+ 	     3. concurrent (can run multyple task
+ 		
+ 		
+ 				CALL STACK
+ function multiply (a, b) {
+ 	return a * b;
+ }
+ 
+ funtion square(n){
+ 	return multiply(n, n);
+ }
+ 
+ function printSquare(n){
+ 	var squared = square(n);
+ 	console.log(squared);
+ }
+ 
+ printSquare(4);
+ (read from above to top)
+ 
+ 
+ 				HOW TO DECLARE
+ let message; //declare
+ 
+ message = 'hello' //assign
+ 
+ let number;
+ number = 123 //assign
+ 
+ var a = 'var'; // can be redeclare, can be reassign
+ let b = 'let'; // can't be redeclare, can be reassign
+ const c = 'const' // can't be redeclare, can't be reassign
+ // except: const obj1 = {
+ //	    prob1: '123',
+ //	    prop2: 123
+ //	   }
+ 
+ //        obj1.prop1 = '1234' >>> obj1 willbe '1234'
+ //	   obj1.prop3 = '4444' >>> add more object
+ 
+ //        console.log(obj1) 
+ 
+ //        and >>>  
+ 
+ //	   const arr1 =[1,2,3,4,5]
+ //	   arr[0] = 4
+ 
+ // 	   console.log(arr1) >>> [4,2,3,4,5]
+ 
+ variable naming
+* first character must not digit
+* case sensitive
+* can't use reserved words
+* must contain only letters, digits, or the symbos '$' and '_'
+
+
+				DATA TYPES
+* String = "string"
+* Number = 123
+* Boolean = true or false
+* Null = null
+* Undefined 
+* Array = ["sting", 1, true, {prop1: 'abc'}, [1,2,3,4]] 
+	  // array is from index 0 
+	  
+	  console.log(array[2]
+
+* Object = { // assign property using ':'
+   prop1: 'property 1',
+   prop2: 1234,
+// if need function using callback function:
+   func : (n) => { // using ':' bcs property
+	console.log(n) // <= function
+	return n // using return for console.log
+ }  
+}
+
+				TYPE OF
+str = string
+number = number
+boolean = boolean
+object = object
+array = object
+obj.prop1 = string // if obj string
+obj.prop2 = number // if obj number
+obj.func = function // if obj func 
+
+console.log(Object.func('123') // <= if console.log(function) call console.log will be undefined (need return)
+
+
+		 		MODEL FUNCTION
+function func() {
+
+}
+
+or
+
+func = () => {
+
+}
+
+
+				STRING METHOD
+length != index
+example: let msg1 = "hello"
+	 let msg2 = "world"
+	 let msg3 = msg1 + ' ' + msg2
+	 // length : 11
+	 // index : 10 
+	 console.log(msg3.length) // 11
+	 console.log(msg3.chartAt(10)) // index 10 = d
+	 console.log(msg3.slice(0, 5) // from index 0 to 4 length >>> hello
+	 console.log(msg3.concat(msg2) // "helloworld" without " "
+	 console.log(msg3.include("world") // if world exist will be 'true' in boolean
+	 console.log(msg3.indexOf('ello')) // indexOf 1 if 'o' will have index first 'o'
+	 console.log(msg3.replace("world", "purwadhika")) // world will be changed
+	 
+	 let arrStr = msg3.split('')
+	 console.log(arrStr) // ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
+	 
+	 
+	 			NUMBER METHOD
+example: let num = 3.3333333
+
+	 console.log(num.toString()) // 3.3333333
+	 console.log(num.toExponential()) // 3.3333333e+0
+	 console.log(num.toFixed(2)) // 3.33
+	 console.log(num.toPrecision(1)) // 3
+	 console.log(num.valueOf(2)) // 3.3333333 >>> number
+	 
+	 
+	 			BOOLEAN
+"" 		false
+"abc" 		true
+1		true
+0		false
+-1		true
+null		false
+undefined	false
+let arr2 = []	true
+let obj2 = {}	true
+
+
+let date = new Date('2023-03-0') // YYYY/MM/DD
+
+
+				========
+let angkaPertama = 30
+// angkaPertama = angkaPertama + 40
+// angkaPertama += 40
+
+
+let inc = 20
+// inc++
+// inc++
+// inc--
+// --inc
+// ++inc
+
+console.log(inc++) // 20
+console.log(inc++) // 20
+
+console.log(i++nc) // 22
+
+
+
+
+
+
