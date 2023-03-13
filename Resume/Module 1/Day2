@@ -1,0 +1,255 @@
+			DAYYYYYYYYYYYYYY 2
+			
+
+			CONDITIONAL STATEMENT
+
+"if" STATEMENT
+
+* contditional statement are code expressions usedto tell the computer,
+  which block of code to execute
+  
+* conditional satement will using "if statement"
+
+if statement is condition (which should result in a boolean), 
+and a block of code that executes when the condition's result is true
+
+example: 
+let age = 21;
+
+if (age >= 17) {
+   console.log("now you can make id card") 
+}
+
+"else" STATEMENT
+
+else statement will act as a backup plan for "if statement".
+it does not require a condition, it only needs a block of code to execute. 
+
+example: 
+let age = 21;
+
+if (age >= 17) {
+   console.log("now you can make id card") 
+} else {
+   console.log("you are not old enough to make id card")
+}
+
+	>>>"else" no need condition<<<
+
+"else if and chaining condition" STATEMENT
+
+in this case, we're gonna need to have multiple condition.
+
+let grade = "B"
+
+if (grade === "A") {
+   console.log("Exelent result")
+} else if (grade === "B") {
+   console.log("Great Result")
+} else if (grade === "C") {
+  console.log("OK")
+} else {
+  console.log("you fail")
+}  
+
+			OPERATOR IN CONDITIONAL STATEMENT
+			
+OPERATOR	DESCRIPTION
+
+==		equal
+!=		not equal
+>		greater than
+<		less than
+>=		greater than equal
+<=		less than equal
+===		strict equality
+
+	>>>(=) just for assign<<<
+
+	== diffrent from ===
+
+example:
+let a = 1;
+let b = '1';
+
+if (a == b) {
+   console.log('masuk')
+}
+   >>>true<<<
+   
+let a = 1;
+let b = '1';
+
+if (a === b) {
+   console.log('masuk')
+}
+// will check "value" than "data type"
+
+   >>>false<<<
+   
+			TRUTHY and FALSY VALUES
+			
+truthy and falsy are term used in programming to determine values within a boolean context
+
+example: 
+let locaction = ""
+
+// location = truthy
+// if !location = falsy
+
+if (location) {
+   console.log(location);
+}  // false
+
+if (!location) {
+   console.log(location);
+}  // true
+   
+	// and, or
+	
+let gender = ''
+let age = 17
+
+//gender harus male atau female dan umur harus >= 17
+
+if ((gender == 'male' || gender == 'female') && age >= 17) {
+   console.log('silahkan masuk');
+}
+
+if (!gender && age) {
+   console.log('hello');
+}
+
+example nested 'if':
+if (age >= 17) {
+// kondisi di dalam kondisi pertama 
+   if (gender == 'male') {
+      console.log('masuk cowo')
+   } else if (gender == 'female') {
+      console.log('masuk cewe')
+   } else {
+      console.log('masuk ???')
+   }
+}
+
+			TERNARY OPERATOR
+			
+// common if example:
+
+const str = "JavaScript"
+
+if (str === "JavaScript") {
+   console.log("JavaScript")
+} else {
+   console.log("not JavaScript")
+}
+
+// ternary operator (only 1 if)
+
+console.log(str === "JavaScript" ? "JavaScript" : "not JavaScript")
+	
+let makanan = "roti"
+	   	
+console.log(
+  makanan ===	"roti" ? console.log(roti) : console.log('invalid')	
+		
+// ternary operator common using in front-end
+
+
+			FOR LOOP
+
+// for(declare;condition;counter)
+
+for(let i = 0; i < 3 ; i++) {
+    // run code blok if condition true
+    console.log('hello')
+}
+	
+// if inside for
+
+let i = 0
+
+for (i = 0; i < 3; i++) {
+   if (i == 2) {
+     console.log("loop terakhir");
+   } else {
+     console.log(i);
+   }
+}
+
+console.log."hasil i adalah " + i)
+
+// 0
+// 1
+// loop terkahir
+
+// hasil i adalah 3
+	
+			NESTED FOR
+// make "a" i times 
+
+for (let i = 1; i <= 3; i++) {
+   let a = '';
+   for (let j = 0; j < i; i++ {
+      a += 'a ';
+   }
+   console.log(a);
+}
+	
+			WHILE LOOP
+			
+let perut = 'laper';
+let piring = 0	
+	
+while (perut == 'laper') {
+   // code block/ task
+   console.log('makan');
+   // counter
+   piring++;
+ if (piring == 5) {
+   perut = 'kenyang';
+ }
+}	
+	
+			DO WHILE LOOP
+piring = 0
+perut = "kenyang"
+
+do {
+  console.log("makan");
+  piring++
+  
+  if (piring == 5) {
+    perut = "kenyang";
+  }
+} while perut == "laper");
+
+			SWITCH CASE
+			
+let day = new Date().getDay();
+let hari = '';
+console.log(day);
+
+switch (day) {
+ case 0:
+   hari = 'minngu';
+   break; // need break to stop loop
+ case 1:
+   hari = 'senin';
+   break;
+ case 2:
+   hari = 'selasa';
+   break;
+ case 3:
+   hari = 'rabu';
+   break;
+ case 4:
+   hari = 'kamis';
+   break;
+ case 5:
+   hari = 'jumat';
+   break;
+ case 6:
+   hari = 'sabtu';
+   break;
+}

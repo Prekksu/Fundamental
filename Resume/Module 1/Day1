@@ -1,4 +1,4 @@
- 				DAYYYYYYYYYYYYYY 1
+ 			DAYYYYYYYYYYYYYY 1
  
  
  frontend using javascript for logic
@@ -11,7 +11,8 @@
  	     3. concurrent (can run multyple task
  		
  		
- 				CALL STACK
+ 			CALL STACK
+ 			
  function multiply (a, b) {
  	return a * b;
  }
@@ -29,7 +30,8 @@
  (read from above to top)
  
  
- 				HOW TO DECLARE
+ 			HOW TO DECLARE
+ 
  let message; //declare
  
  message = 'hello' //assign
@@ -64,7 +66,8 @@
 * must contain only letters, digits, or the symbos '$' and '_'
 
 
-				DATA TYPES
+			DATA TYPES
+
 * String = "string"
 * Number = 123
 * Boolean = true or false
@@ -85,7 +88,8 @@
  }  
 }
 
-				TYPE OF
+			TYPE OF
+			
 str = string
 number = number
 boolean = boolean
@@ -98,7 +102,8 @@ obj.func = function // if obj func
 console.log(Object.func('123') // <= if console.log(function) call console.log will be undefined (need return)
 
 
-		 		MODEL FUNCTION
+		 	MODEL FUNCTION
+		 	
 function func() {
 
 }
@@ -110,7 +115,8 @@ func = () => {
 }
 
 
-				STRING METHOD
+			STRING METHOD
+			
 length != index
 example: let msg1 = "hello"
 	 let msg2 = "world"
@@ -129,7 +135,8 @@ example: let msg1 = "hello"
 	 console.log(arrStr) // ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
 	 
 	 
-	 			NUMBER METHOD
+	 		NUMBER METHOD
+	 		
 example: let num = 3.3333333
 
 	 console.log(num.toString()) // 3.3333333
@@ -139,7 +146,8 @@ example: let num = 3.3333333
 	 console.log(num.valueOf(2)) // 3.3333333 >>> number
 	 
 	 
-	 			BOOLEAN
+	 		BOOLEAN
+	 		
 "" 		false
 "abc" 		true
 1		true
@@ -154,7 +162,8 @@ let obj2 = {}	true
 let date = new Date('2023-03-0') // YYYY/MM/DD
 
 
-				========
+			========
+			
 let angkaPertama = 30
 // angkaPertama = angkaPertama + 40
 // angkaPertama += 40
